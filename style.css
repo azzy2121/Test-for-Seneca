@@ -14,7 +14,7 @@ img{
 }
 
 header {
-  background-image: url(./assets/hero.jpg);
+  /* background-image: url(./assets/hero.jpg); */
   background-size: 1920px 500px;
   background-position:bottom;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ header {
 }
 
 .bg-accent {
-  background-color: #FF6600;
+  background-color: #008080;
 }
 
 .txt-accent {
