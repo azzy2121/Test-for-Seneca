@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Summer Work Camping Trip</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- icon -->
+	<link rel="icon" href="favicon.ico">
+	<!-- BootStrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!-- custom CSS -->
+	<link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+
+<!-- nav -->
+<nav class="navbar navbar-dark  p-4 bg-accent">
+<div class="container">
+	<h1 class="text-white h3 pt-1"><img src="assets/logo.svg" width="50" height="50" alt="logo"> Summer Work Camping Trip</h1></div>
+	<button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon "></span>
+	</button>
+</div>
+</nav>	  
+<div class="collapse mr-auto" id="navbarToggleExternalContent">
+<div class=" p-4 mr-auto">
+	<ul class="links"> 
+		<li><a href="#">Team Directory</a></li>
+		<li><a href="#">Directions</a></li>
+		<li><a href="#">Park Website</a></li>
+	</ul>
+</div>
+</div>
+
+
+<!-- header -->
+<header class="jumbotron jumbotron-fluid head">
+	<div class="container">
+		<h2 class="text-white pt-5">Hi, you’ve been invited!</h2> 
+	</div>
+</header>
+
+
+	<main>
+		<div class="container">
+			<h3 class="mt-3">Camp Registration <span class="txt-accent h6"> All fields are required</span></h3>
+			<form id="myform" class="p-4"> 
+				<div class="form-group col-3">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Leslie">
+					<span class="txt-accent lead" id="name-error"></span>
+				</div>
+				<div class="form-group col-3">
+					<label for="email">Email address</label>
+					<input type="email" class="form-control" id="email" placeholder="leslie@mymail.com">
+					<span class="txt-accent lead" id="email-error"></span>
+				</div>
+				<div class="col-l-3 m-2">
+					<label for="item">What item will you bring?</label>
+					<select name="item" id="item">
+						<option value="">Please select an option</option>
+						<option value="sun screen">Sun screen</option>
+						<option value="sleeping bag">Sleeping bag</option>
+						<option value="flashlight">Flashlight</option>
+						<option value="tents">Tents</option>
+						<option value="bear spray">Bear Spray</option>
+						<option value="Camera">Camera</option>
+						<option value="first aid kit"> Match</option>
+						<option value="">Robe</option>
+					</select>
+					<span class="txt-accent lead" id="item-error"></span>
+				</div>
+				<div class="col-l-3">
+					<fieldset>
+						<legend>What group are you camping with?</legend>
+						<input type="radio" value="A" name="camping-group" id="camping-group-a">
+						<label class="p-2" for="camping-group-a"><strong>Group A:</strong> In Tents Energy</label>
+						
+						<input type="radio" value="B" name="camping-group" id="camping-group-b">
+						<label class="p-2" for="camping-group-b"><strong>Group B:</strong> Trees A Crowd</label>
+						
+						<input type="radio" value="C" name="camping-group" id="camping-group-c"> 
+						<label class="p-2" for="camping-group-c"><strong>Group C:</strong> Lit AF(ire)</label>
+						</fieldset>
+						<span class="txt-accent lead" id="camping-error"></span>
+				</div>
+				<button  class="btn bg-accent text-white mt-2">Submit Registration</button>
+			</form>
+			
+		</div>
+	</main>
+
+	<section class="camping-groups mt-3">
+		<div class="container">
+			<h2 class="m-4 p-3">Camping Groups</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+
+				<div class="card col-l-3 col-m-3 col-s-12 m-4 " style="width: 18rem;">
+					<div class="d-flex flex-row">
+						<div class="m-2"><img src="assets/pinecone.svg" alt="pinecone" width="80" height="100"></div>
+						<div class="m-2"><h3><span class="h6">Group A </span><br> In Tents Energy</h3></div>
+					</div>
+					<hr>
+					<div class="card-body">						
+					  <ul class="card-text camping-group-a">
+						<li ><span class="groupName-1"></span>Will - coffee<span  class="groupItem-1"></span></li>
+						<li ><span class="groupName-1"></span>Dave - Blanket<span  class="groupItem-1"></span></li>
+						<li ><span class="groupName-1"></span> Christine - s'mores<span  class="groupItem-1"></span></li>
+					  </ul>
+					</div>
+				  </div>
+
+				  <div class="card col-l-3 col-m-3 col-s-12 m-4" style="width: 18rem;">
+					<div class="d-flex flex-row">
+						<div class="m-2"><img src="assets/tree.svg" alt="tree" width="80" height="100"></div>
+						<div class="m-2"><h3><span class="h6">Group B </span><br>Trees A Crowd</h3></div>
+					</div>
+					<hr>
+					<div class="card-body">
+					  <ul class="card-text camping-group-a">
+						<li ><span class="groupName-2"></span> Mona - first aid kit<span  class="groupItem-2"></span></li>
+						<li ><span class="groupName-2"></span> Stephanie - candy<span  class="groupItem-2"></span></li>
+						<li ><span class="groupName-2"></span> Michelle - Bungee Cords<span  class="groupItem-2"></span></li>
+					  </ul>
+					</div>
+				  </div>
+
+				  <div class="card col-l-3 col-m-3 col-s-12 m-4" style="width: 18rem;">
+					<div class="d-flex flex-row">
+						<div class="m-2"><img src="assets/campfire.svg" alt="campfire" width="80" height="100"></div>
+						<div class="m-2"><h3><span class="h6">Group C </span><br> Lit AF(ire)</h3></div>
+					</div>
+					<hr>
+					<div class="card-body">
+					  <ul class="card-text camping-group-a">
+						<li ><span class="groupName-3"></span>Ryan - kite<span  class="groupItem-3"></span></li>
+						<li ><span class="groupName-3"></span>Grandon - fruits<span  class="groupItem-3"></span></li>
+					  </ul>
+					</div>
+				  </div>
+
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="p-4 bg-accent text-white">
+			<small>&copy;copyright Azzy 2022</small>
+		</div>
+	</footer>
+	<!-- Javascript Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<!-- custom JS -->
+	<!-- <script src="script.js"></script> -->
+</body>
+
+</html>
